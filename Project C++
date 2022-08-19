@@ -1,0 +1,99 @@
+#include <iostream> 
+using namespace std; 
+
+void signup()
+{
+	string name, email, phone, pass;
+	int n;
+
+	char ch;
+	
+	cout<<"Welcome To E-Courses "<<endl;
+	cout<<"------------------------"<<endl;
+		
+	cout<<"------------------------"<<endl;
+	cout<<"Enter Your Email "<<endl;
+	getline(cin, email);
+	
+	cout<<"Enter Your Name "<<endl;
+	getline(cin, name );
+	
+	cout<<"------------------------"<<endl;
+	cout<<"Enter Your Phone Number "<<endl;
+	getline(cin, phone);
+	
+	cout<<"------------------------"<<endl;
+	cout<<"Create Your Password "<<endl;
+	getline(cin, pass);
+	cout<<"your password is created ************** "<<endl;
+	
+	
+	cout<<"---------------------------------"<<endl;
+	cout<<"Your Signup Is Complete "<<endl;
+	
+
+	cout<<"---------------------------------"<<endl;
+	cout<<"Choose Your Desired Courses "<<endl;
+	cout<<"---------------------------------"<<endl;	
+	cout<<"1 Amazon FBA = A \n2 Video Editing = V \n3 Graphic Designing = G \n4 C++ Programming = P "<<endl;
+	cin>>ch;
+	
+	switch (ch)
+	{
+		case 'A':
+		cout<<"You Selected Amazon FBA Course "<<endl;
+		cout<<"-----------------------------------------------------------------"<<endl;
+		cout<<" In This Course You Will Learn How To Manage Amazon FBA Business \n Duration Of This Course = \t 6 Months \n Fee Of This Course = \t 10000 PKR"<<endl;
+		cout<<"---------------------------------------------------"<<endl;
+		cout<<"Your Course Is Registered "<<endl;
+		break;		
+			
+		case 'V':
+		cout<<"You Selected Video Editing Course "<<endl;
+		cout<<"-----------------------------------------------------------------"<<endl;
+		cout<<" In This Course You Will Learn How To Edit a Video \n Duration Of This Course = \t 3 Months  \n Fee Of This Course = \t 20000 PKR"<<endl;
+		cout<<"---------------------------------------------------"<<endl;
+		cout<<"Your Course Is Registered "<<endl;
+		break;	
+				
+		case 'G':
+		cout<<"You Selected Graphic Desiging Course "<<endl;
+		cout<<"-----------------------------------------------------------------"<<endl;
+		cout<<" In This Course You Will Learn How To Design Images And Interfaces \n Duration Of This Course = \t 6.5 Months  \n Fee Of This Course = \t 220000 PKR"<<endl;
+		cout<<"---------------------------------------------------"<<endl;
+		cout<<"Your Course Is Registered "<<endl;
+		break;	
+		
+		case 'P':
+		cout<<"You Selected C++ Programming Course "<<endl;
+		cout<<"-----------------------------------------------------------------"<<endl;
+		cout<<" In This Course You Will Learn The Fundamentals of C++ And How To Use Them \n Duration Of This Course = \t 3 Months  \n Fee Of This Course = \t 30000 PKR"<<endl;
+		cout<<"---------------------------------------------------"<<endl;
+		cout<<"Your Course Is Registered "<<endl;
+		break;	
+	
+	
+	}
+
+	
+	cout<<"Go To Main Menu Press = 1 And To Exit The Program Press = 2"<<endl;
+	cin>>n;
+
+while(n!=2) {
+	signup();
+	break;
+    cout<<"Go To Main Menu Press = 1 And To Exit The Program Press = 2"<<endl;
+}
+
+cout<<"Thank You "<<endl;
+	
+}
+
+  
+  main ()
+  {
+  	int n;
+
+  	signup();
+ 
+  }
